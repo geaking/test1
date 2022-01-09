@@ -33,7 +33,7 @@ twitch_miner = TwitchChannelPointsMiner(
         telegram=Telegram(                                                          # You can omit or leave None if you don't want to receive updates on Telegram
             chat_id=443385986,                                                      # Chat ID to send messages @GiveChatId
             token="1604832284:AAGhm97F6YjCFRyLiWBNJmT7dmXlL5iMfJA",                          # Telegram API token @BotFather
-            events=[Events.STREAMER_ONLINE, Events.STREAMER_OFFLINE, "BET_LOSE"],   # Only these events will be sent to the chat
+            events=[Events.STREAMER_ONLINE, Events.STREAMER_OFFLINE, "BET_LOSE", "GAIN_FOR_WATCH", "GAIN_FOR_CLAIM" ],   # Only these events will be sent to the chat
             disable_notification=True,                                              # Revoke the notification (sound/vibration)
         )
     ),
